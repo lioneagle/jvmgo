@@ -18,7 +18,7 @@ func main() {
 		startJVM(cmd)
 	}
 
-	fmt.Println("cmd =", cmd)
+	//fmt.Println("cmd =", cmd)
 
 }
 
