@@ -29,7 +29,7 @@ func (self *ZipEntry) ReadClass(classname string) ([]byte, Entry, error) {
 	defer reader.Close()
 
 	for _, file := range reader.File {
-		//fmt.Println("file.Name =", file.Name)
+		//fmt.Println("file.Name =", file.Name, "classname =", classname)
 		if file.Name == classname {
 			rc, err := file.Open()
 			if err != nil {
