@@ -21,7 +21,7 @@ func PrintUsage() {
 
 func ParseCmd() *Cmd {
 	cmd := &Cmd{}
-	flag.Usage = PrintUsage
+	//flag.Usage = PrintUsage
 	flag.BoolVar(&cmd.Help, "help", false, "print help message")
 	flag.BoolVar(&cmd.Help, "?", false, "print help message")
 	flag.BoolVar(&cmd.Version, "version", false, "print version and exit")
